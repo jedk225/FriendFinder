@@ -14,6 +14,11 @@ module.exports = function (app) {
 
         var newFriend = req.body;
 
+        //Maximum difference (5 * 10) - (1 * 10) = 40
+        var initialDifference = 40;
+        //First friend will always be Emilia (like Tom for MySpace unless there is a better match)
+        var indexOfBestMatch = 0;
+
         for (var i = 0; i < friendsArray.length; i++) {
             var totalDifference = 0;
 
@@ -22,7 +27,17 @@ module.exports = function (app) {
                 totalDifference = + difference;
             }
 
+            if (totalDifference < initialDifference) {
+                indexOfBestMatch = i;
+                initialDifference = totalDifference;
+
+            }
         }
+
+        friendsArray.push(newFriend);
+
+        res.json(friendsArray[indexOfBestMatch]);
+
 
     });
 
