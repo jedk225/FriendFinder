@@ -26,7 +26,6 @@ Please install each of the packages listed above by typing 'npm install [Package
 # Instructions
 To use the web application:
 
-```
 1. Click the 'Go to Survey' button
 
 2. Enter your name and a link to a photo image in the form provided
@@ -34,8 +33,6 @@ To use the web application:
 3. Answer questions 1-10 to the best of your ability. The responses are based on a Likert scale ranging from 1 (you completely disagree with the statement) to 5 (you completely agree with the statement)
 
 4. Find out who your best match is!
-
-```
 
 ## Contributers
 * Jed Kim
