@@ -5,6 +5,9 @@ Friend Finder is a compatibility-based web application that helps people meet ot
 
 The purpose of this project is to gain experience on how to start a server using Node and to use Express to handle routing.
 
+# Link to Deployed App
+https://friend-finder-jed.herokuapp.com/api/friends
+
 # Technologies
 ```
 1. Node.js
